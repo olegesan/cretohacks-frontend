@@ -1,0 +1,34 @@
+.navbar {
+    background-color: #080957;
+    color:rgb(233, 233, 233);
+    display: flex;
+}
+.left,
+.navbar.right {
+    display: flex;
+    flex-flow: row;
+    flex:1;
+}
+.navbar.link{
+    width: auto;
+    display: block;
+}
+.navbar.nav-link:hover,
+.navbar.nav-link:active{
+    color:red;
+    background: white;
+}
+.navbar.right{
+    justify-content: flex-end;
+}
+.navbar  a{
+    color:#9f9fc1 !important;
+}
+.navbar-nav{
+    justify-content: flex-end;
+}
+.nav-logo {
+    float: left;
+    height:50px;
+    padding: 0px 5px;
+  }
