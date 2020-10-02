@@ -42,7 +42,7 @@ function Profile ({match}){
 
     useEffect(()=>{
         //"/api/info/<username>"
-        const url = "http://cretohacks-backend.herokuapp.com/api/info/"+username
+        const url = "https://cretohacks-backend.herokuapp.com/api/info/"+username
         axios.get(url)
         .then(res => {
             const userInfo = res.data;

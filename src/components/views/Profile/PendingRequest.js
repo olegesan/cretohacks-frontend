@@ -11,7 +11,7 @@ export function PendingRequest ({handleRequest, username, teamId, teamName, hack
 
     const handleAccept = (event)=>{
         ///api/teams/accept/<hackathon_id>/<team_id>
-        const url = "http://cretohacks-backend.herokuapp.com/api/teams/accept/"+hackathonId+"/"+teamId
+        const url = "https://cretohacks-backend.herokuapp.com/api/teams/accept/"+hackathonId+"/"+teamId
         const data = {
             username,
             leader:user.username
@@ -29,7 +29,7 @@ export function PendingRequest ({handleRequest, username, teamId, teamName, hack
     }
     const handleDecline = (event)=>{
         ///api/teams/deny/<hackathon_id>/<team_id>
-        const url = "http://cretohacks-backend.herokuapp.com/api/teams/deny/"+hackathonId+"/"+teamId
+        const url = "https://cretohacks-backend.herokuapp.com/api/teams/deny/"+hackathonId+"/"+teamId
         const data = {
             username
         }

@@ -23,7 +23,7 @@ function Login (){
         event.preventDefault()
         
         
-        const url = "http://cretohacks-backend.herokuapp.com/api/login"
+        const url = "https://cretohacks-backend.herokuapp.com/api/login"
         const data = {
             email: email,
             password: password

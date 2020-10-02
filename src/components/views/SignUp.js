@@ -48,7 +48,7 @@ function SignUp (){
 
     const handleSignUp = (event) =>{
         event.preventDefault()
-        const url = "http://cretohacks-backend.herokuapp.com/api/signup"
+        const url = "https://cretohacks-backend.herokuapp.com/api/signup"
         const data = {
             email,
             password,

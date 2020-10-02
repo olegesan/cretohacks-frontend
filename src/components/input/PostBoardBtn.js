@@ -7,7 +7,7 @@ function PostBoardBtn ({username, hackathonId}){
     console.log(hackathonId)
     const history = useHistory();
     const handlePostBoard = () =>{
-        const url = "http://cretohacks-backend.herokuapp.com/api/"+hackathonId+"/board"
+        const url = "https://cretohacks-backend.herokuapp.com/api/"+hackathonId+"/board"
         const data = {
             username
         }

@@ -60,7 +60,7 @@ function EditProfile (){
     //     setPassword(password);
     // }
     useEffect(()=>{
-        const url = "http://cretohacks-backend.herokuapp.com/api/user/info/"+user.token
+        const url = "https://cretohacks-backend.herokuapp.com/api/user/info/"+user.token
         axios.get(url)
         .then(res => {
             
@@ -84,7 +84,7 @@ function EditProfile (){
 
     const handleSave = (event) =>{
         event.preventDefault()
-        const url = "http://cretohacks-backend.herokuapp.com/api/user/"+user.token
+        const url = "https://cretohacks-backend.herokuapp.com/api/user/"+user.token
         const data = {
             email,
             username,

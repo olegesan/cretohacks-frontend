@@ -31,7 +31,7 @@ function EditTeam ({match}){
     useEffect(()=>{
         //get info about current team
         const hackId = match.params.hackathonId
-        const url = "http://cretohacks-backend.herokuapp.com/api/teams/"+hackId+"/"+teamId
+        const url = "https://cretohacks-backend.herokuapp.com/api/teams/"+hackId+"/"+teamId
         
         axios.get(url)
         .then(res => {
@@ -51,7 +51,7 @@ function EditTeam ({match}){
         .catch(err => console.log(err))
 
         //get hackathons info
-         const url2 = "http://cretohacks-backend.herokuapp.com/api/hackathon/list"
+         const url2 = "https://cretohacks-backend.herokuapp.com/api/hackathon/list"
         axios.get(url2)
         .then(res => {
             const hackInfo = res.data.map((data) => {
@@ -89,7 +89,7 @@ function EditTeam ({match}){
     const handleSaveTeam = (event) =>{
         event.preventDefault()
         console.log(teamId)
-        const url = "http://cretohacks-backend.herokuapp.com/api/teams/edit/"+hackathonId+"/"+teamId
+        const url = "https://cretohacks-backend.herokuapp.com/api/teams/edit/"+hackathonId+"/"+teamId
         ///api/teams/edit/<hackathon_id>/<team_id>
         const data = {
            teamName,
@@ -110,7 +110,7 @@ function EditTeam ({match}){
         .catch(err => console.log(err))
     }
     const handleDelete = (event) =>{
-        const url = "http://cretohacks-backend.herokuapp.com/api/teams/delete/"+hackathonId+"/"+teamId
+        const url = "https://cretohacks-backend.herokuapp.com/api/teams/delete/"+hackathonId+"/"+teamId
         ////api/teams/delete/<hackathon_id>/<team_id>
         const data = {
             username:user.username

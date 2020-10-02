@@ -28,7 +28,7 @@ function FindTeam (){
 
     //load hackathon data
     useEffect(()=>{
-        const url = "http://cretohacks-backend.herokuapp.com/api/hackathon/list"
+        const url = "https://cretohacks-backend.herokuapp.com/api/hackathon/list"
         axios.get(url)
         .then(res => {
             const hackInfo = res.data.map((data) => {
@@ -63,7 +63,7 @@ function FindTeam (){
     }
     const handleLoadTeams = (hackathonId)=>{
         ///api/teams/<hackathon_id>
-        const url = "http://cretohacks-backend.herokuapp.com/api/teams/"+hackathonId.id
+        const url = "https://cretohacks-backend.herokuapp.com/api/teams/"+hackathonId.id
         axios.get(url)
         .then(res => {
             console.log(res)

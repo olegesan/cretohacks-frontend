@@ -22,7 +22,7 @@ function CreateTeam (){
 
     //load hackathon data
     useEffect(()=>{
-        const url = "http://cretohacks-backend.herokuapp.com/api/hackathon/list"
+        const url = "https://cretohacks-backend.herokuapp.com/api/hackathon/list"
         axios.get(url)
         .then(res => {
             const hackInfo = res.data.map((data) => {
@@ -54,7 +54,7 @@ function CreateTeam (){
 
     const handleCreateTeam = (event) =>{
         event.preventDefault()
-        const url = "http://cretohacks-backend.herokuapp.com/api/teams/create/"+hackathonId
+        const url = "https://cretohacks-backend.herokuapp.com/api/teams/create/"+hackathonId
         const data = {
            teamName,
            teamDescription,

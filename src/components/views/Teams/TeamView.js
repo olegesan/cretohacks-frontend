@@ -17,7 +17,7 @@ function TeamView ({match}){
     useEffect(()=>{ // {"teamId":team_id, "teamName":team_name, "teamInformation":team_information, "teamDiscordLink":team_discord_link, "teamMembers":[member_info]}
         
         
-        const url = "http://cretohacks-backend.herokuapp.com/api/teams/"+hackathonId+"/"+teamId
+        const url = "https://cretohacks-backend.herokuapp.com/api/teams/"+hackathonId+"/"+teamId
         
         axios.get(url)
         .then(res => {
@@ -51,7 +51,7 @@ function TeamView ({match}){
     //apply to join the team
     const handleApply = () =>{
         //"/api/teams/apply/<hackathon_id>/<team_id>"
-        const url = "http://cretohacks-backend.herokuapp.com/api/teams/apply/"+hackathonId+"/"+teamId
+        const url = "https://cretohacks-backend.herokuapp.com/api/teams/apply/"+hackathonId+"/"+teamId
         const data = {
             username:user.username
         }

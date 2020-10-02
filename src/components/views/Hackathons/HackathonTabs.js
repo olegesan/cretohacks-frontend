@@ -19,7 +19,7 @@ export function HackathonTabs ({teams, username, hackathonId}){
 
     useEffect(()=>{
 
-        const url2 = "http://cretohacks-backend.herokuapp.com/api/"+hackathonId+"/board"
+        const url2 = "https://cretohacks-backend.herokuapp.com/api/"+hackathonId+"/board"
         ///api/<username>/my_teams" all teams for user
         // {"teamId":team_id, "teamName":team_name, "teamInformation":team_information, "teamDiscordLink":team_discord_link, "teamMembers":[member_info]}
         // 0: Object { team_discord_link: "discord.gg/falcons", team_id: "8675051c067f4f9aa7ea661f9e090230", team_information: "we are the falcons", … 
@@ -33,7 +33,7 @@ export function HackathonTabs ({teams, username, hackathonId}){
         })
     
         //     teams.map((team)=>{
-        //         const url = "http://cretohacks-backend.herokuapp.com/api/teams/applicants/"+team.hackathonId+"/"+team.id
+        //         const url = "https://cretohacks-backend.herokuapp.com/api/teams/applicants/"+team.hackathonId+"/"+team.id
         //         ////api/teams/applicants/<hackathon_id>/<team_id>
         //         // {"teamId":team_id, "teamName":team_name, "teamInformation":team_information, "teamDiscordLink":team_discord_link, "teamMembers":[member_info]}
         //         // 0: Object { team_discord_link: "discord.gg/falcons", team_id: "8675051c067f4f9aa7ea661f9e090230", team_information: "we are the falcons", … 

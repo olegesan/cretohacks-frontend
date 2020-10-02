@@ -16,7 +16,7 @@ function HackathonView ({match}){
 
     useEffect(()=>{
         const hackathonId = match.params.hackathonId
-        const url = "http://cretohacks-backend.herokuapp.com/api/hackathon/info/"+hackathonId
+        const url = "https://cretohacks-backend.herokuapp.com/api/hackathon/info/"+hackathonId
         axios.get(url)
         .then(res => {
             const hackInfo = 
@@ -31,7 +31,7 @@ function HackathonView ({match}){
         })
         .catch(err => console.log(err))
         // /api/teams/<hackathon_id>
-        const url2 = "http://cretohacks-backend.herokuapp.com/api/teams/"+hackathonId
+        const url2 = "https://cretohacks-backend.herokuapp.com/api/teams/"+hackathonId
         // {"teamId":team_id, "teamName":team_name, "teamInformation":team_information, "teamDiscordLink":team_discord_link, "teamMembers":[member_info]}
         // 0: Object { team_discord_link: "discord.gg/falcons", team_id: "8675051c067f4f9aa7ea661f9e090230", team_information: "we are the falcons", … 
         axios.get(url2)
